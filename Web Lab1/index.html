@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <title>Number Reverser</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <img class="content_left-image" src="./Vector.png" alt="" />
+      <ul class="header_menu">
+        <li class="header_menu-item">
+          <a
+          class="header_menu-item"
+            href="./redactors-help.html"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Redactor's help</a
+          >
+        </li>
+        <li class="header_menu-item">
+          <a
+          class="header_menu-item"
+            href="./financial-help.html"
+            target="_blank"
+            rel="noopener noreferrer"
+          >Financial help</a>
+        </li>
+      </ul>
+    </header>
+    <main>
+      <div class="upper_section">
+        <div class="content_right">
+          <div class="input">
+            <h4 class="content_right-text">Write any number to reverse it</h4>
+            <input
+              type="text"
+              placeholder="Type your number here"
+              class="e-mail"
+              id="target-number"
+            />
+            <button class="button reverse" onclick="reverseNumber()">
+              Reverse
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="result__section">
+        <h2 class="result__section_title">Your result is</h2>
+        <h3 class="result__section_text">
+          <!-- Result view -->
+        </h3>
+      </div>
+    </main>
+    <footer>
+      <div class="socials"></div>
+      <p class="text_footer">Copyright Ihor Popovych</p>
+    </footer>
+  </body>
+  <script>
+    const reverseNumber = () => {
+      const number = document.getElementById("target-number").value;
+      document.querySelector(".result__section_text").innerHTML = number
+        .split("")
+        .reverse()
+        .join("");
+    };
+  </script>
+</html>

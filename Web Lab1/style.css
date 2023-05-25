@@ -1,0 +1,115 @@
+html, body{
+	font-family: 'Larsseit';
+	background: linear-gradient(rgb(235, 235, 175), rgb(235, 235, 175), rgb(235, 235, 175)) , rgb(rgb(255, 255, 255), rgb(255, 255, 255), rgb(255, 255, 255)20%);
+}
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+	align-items: center;
+	width: 75%;
+}
+.logo{
+	margin: 0 179px;
+	font-size: 24px;
+	line-height: 27px;
+	letter-spacing: -0.035em;
+	color: #62D0DF;
+}
+.header_home {
+	display: flex;
+	flex-direction: row;
+	list-style-type: none;
+	font-family: 'Larsseit';
+	font-size: 15px;
+	line-height: 16px;
+	color: #22356F;
+}
+.header_home-item{
+padding: 0px 15px;
+width: 50px;
+}
+.button {
+	white-space: nowrap;
+	font-size: 14px;
+	line-height: 16px;
+	display: flex;
+	align-items: center;
+	margin: 0 300px;
+	padding: 5px 10px;
+	color: #FFFFFF;
+	background: #62D0DF;
+	border-radius: 50px;
+	border: 0;	
+}
+.content{
+	display: flex;
+margin-left: 15%;
+}
+
+.logo_2{
+	margin-top: 241px;
+	font-size: 24px;
+	line-height: 27px;
+	letter-spacing: -0.035em;
+	color: #62D0DF;	
+}
+h1{
+	width: 550px;
+	height: 167px;
+	font-size: 48px;
+	line-height: 53px;
+	letter-spacing: -0.035em;
+	color: #22356F;
+	text-transform: uppercase;
+}
+p{
+	width: 450px;
+	height: 161px;
+	font-size: 24px;
+	line-height: 42px;
+	color: #22356F;
+}
+.buttons{
+	display: flex;
+	flex-direction: row;
+}
+.button_filled{
+	margin: 5%;
+	white-space: nowrap;
+	width: 90px;
+	height: 29px;
+	font-size: 16px;
+	line-height: 23px;
+	display: flex;
+	align-items: center;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	border: none;
+	background: #F9B640;
+}
+.button_outlined{
+font-size: 16px;
+line-height: 23px;
+display: flex;
+align-items: center;
+letter-spacing: 0.1em;
+border: none;
+text-transform: uppercase;
+color: #FAB63E;
+background-color: transparent;
+}
+.photo{
+	position: fixed;
+    right: 0;
+	clip-path: inset(20px 50px 10px 0 round 50px);
+}
+.background {
+    position: absolute;
+    right: 0;
+    height: 500px;
+    width: 900px;
+    border-radius: 250px;
+    transform: rotate(-15deg);
+}
